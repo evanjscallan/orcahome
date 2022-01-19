@@ -37,7 +37,7 @@ export const index = () => {
           </div>
           <div className={indexStyles.flex}>
               <span><h1 className={indexStyles.landingText}>LISTEN TO ORCAS LIVE!</h1> </span>
-              <span ><Image src={arrow} className={indexStyles.landingArrow} width = "30px" height = "30px"/></span>
+              <span className={indexStyles.landingArrow}><Image src={arrow} width = "30px" height = "30px"/></span>
           </div>
         </div>
 

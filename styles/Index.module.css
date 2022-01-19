@@ -42,14 +42,19 @@
   color: white;
   text-shadow: none;
   display: inline-block; 
-  padding: 27px 0 29px 33px;
+  padding: 27px 10px 29px 33px;
   justify-content: center;
 }
 
 .landingArrow {
   \\display: inline-block; 
   text-shadow: none;
-  \\padding: 40px 0 29px 0;
+  position: relative;
+  top: 35%;
+  right: 2px;
+  width: 30px;
+  flex-shrink: 0;
+  padding-right: 4px;
 }
 
 
