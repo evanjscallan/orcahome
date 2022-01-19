@@ -8,41 +8,105 @@
   padding: 5px 5px;
 }
 
+.landing{
+  position: relative;
+  display: grid;
+  top: 82px;
+  width: 100%;
+}
+
 .landingImage {
-  width: 500px;
-  z-index: 0;
-  background-size: cover;
-  height: 500px;
-  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.flex{
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+  position: relative;
+  
+  border-radius: 20px;
+  margin: 0px 36% 0 36%;
+  max-width: 600px;
+  transform: translateY(-450px);
 }
 
 .landingText {
-  position: absolute;
-  z-index: 0;
-  background-color: black;
+  z-index: 2;
+  font-family: 'Mukta', sans-serif;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 100%;
   color: white;
-  text-align: left;
-  align-items: left;
-  margin-top: 200px;
-  margin-left: 100px;
-  top: 0;
+  text-shadow: none;
+  display: inline-block; 
+  padding: 27px 0 29px 33px;
+  justify-content: center;
+}
+
+.landingArrow {
+  \\display: inline-block; 
+  text-shadow: none;
+  \\padding: 40px 0 29px 0;
+}
+
+
+.vector{
+  z-index: 2;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100%);
+  margin-left: 50%;
+  width:10%;
+}
+
+.vectorbackwards{
+  z-index: 3;
+  margin-left: 80%;
+  transform: rotate(0.5turn);
+  transform: translateX(2em);
+}
+
+@media (max-width: 377px) {
+  .vector, .vectorbackwards{
+    visibility: hidden;
+  }
 }
 
 .landingIntro {
   margin: 20px 40px;
+  font-family: mukta, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  font-size: 44px;
   padding: 5px 2px;
   text-align: left;
+  left: calc(50% - 800.05px/2 - 204.98px);
+
 }
 
 .paragraph {
   margin: 10px 40px;
   padding: 5px 2px;
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  left: calc(50% - 1165px/2 - 22.5px);
+
+  /* P1 */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+  text-align: justify;
 }
 
 .card {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
+  width: 527.08px;
+  left: 97.05px;
+  top: 1204px;
 }

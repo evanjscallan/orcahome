@@ -7,27 +7,43 @@ import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import CardColumns from 'react-bootstrap/CardColumns'
 
-import orcas from '../images/srkw2-10.jpg'
+import orcas from '../images/homepage.png'
+import vector from '../images/vector.png'
+import arrow from '../images/Arrow.png'
 import indexStyles from '../styles/Index.module.css'
 
 export const index = () => {
   return (
     <>
       <Head>
-        <title>Orcasound liste live for orcas</title>
+        <title>Orcasound | listen live for orcas</title>
         <meta
           name="keywords"
-          content="orcasound allows your to listen to live southern killer resident whales live through our hydrophones"
+          content="orcasound allows you to listen to live southern killer resident whales live through our hydrophones"
         />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mukta:wght@600&family=Roboto:300,400,500,700&display=swap"
         ></link>
       </Head>
 
+        
+        <div className={indexStyles.landing}>
+          <Image className={indexStyles.landingImage} src={orcas} /> 
+          <div className={indexStyles.vector}>
+              <Image  src={vector} />
+              <Image className={indexStyles.vectorbackwards} src={vector} />
+          </div>
+          <div className={indexStyles.flex}>
+              <span><h1 className={indexStyles.landingText}>LISTEN TO ORCAS LIVE!</h1> </span>
+              <span ><Image src={arrow} className={indexStyles.landingArrow} width = "30px" height = "30px"/></span>
+          </div>
+        </div>
+
       <div className={indexStyles.home}>
         <Head>
+          
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1"
@@ -39,14 +55,9 @@ export const index = () => {
           ></link>
         </Head>
         <body>
-          <Image
-            className={indexStyles.landingImage}
-            src={orcas}
-            width={1400}
-            height={600}
-          />
+        
+          
 
-          <h2 className={indexStyles.landingText}> Listen to Orcas Live</h2>
           <br></br>
           <h2 className={indexStyles.landingIntro}> What is Orcasound</h2>
           <br></br>
