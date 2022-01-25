@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mukta:wght@500;600&display=swap");
 .body {
   margin: 0px, 50px;
 }
 
 .home {
-  margin-left: 20px;
-  margin-right: 20px;
   padding: 5px 5px;
 }
 
@@ -47,7 +46,6 @@
 }
 
 .landingArrow {
-  \\display: inline-block; 
   text-shadow: none;
   position: relative;
   top: 35%;
@@ -62,27 +60,22 @@
   z-index: 2;
   align-items: center;
   padding: 20px;
-  transform: translateY(-100%);
+  transform: translateY(-110%);
   margin-left: 50%;
   width:10%;
 }
 
-.vectorbackwards{
-  z-index: 3;
-  margin-left: 80%;
-  transform: rotate(0.5turn);
-  transform: translateX(2em);
-}
 
 @media (max-width: 377px) {
-  .vector, .vectorbackwards{
+  .vector{
     visibility: hidden;
   }
 }
 
 .landingIntro {
-  margin: 20px 40px;
-  font-family: mukta, sans-serif;
+  margin: -130px 160px 20px 115px;
+  font-family: 'Mukta', sans-serif;
+  color: #373F41;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -90,23 +83,22 @@
   padding: 5px 2px;
   text-align: left;
   left: calc(50% - 800.05px/2 - 204.98px);
-
+    letter-spacing: -0.02em;
 }
 
 .paragraph {
-  margin: 10px 40px;
+  margin: 0px 160px 0px 115px;
   padding: 5px 2px;
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   left: calc(50% - 1165px/2 - 22.5px);
+  color:#080D26;
 
   /* P1 */
-  font-family: Montserrat;
-  font-style: normal;
+  font-style:normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
-  /* or 28px */
   text-align: justify;
 }
 

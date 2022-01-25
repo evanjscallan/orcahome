@@ -7,9 +7,9 @@ import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import CardColumns from 'react-bootstrap/CardColumns'
 
+import arrow from '../images/Arrow.png'
 import orcas from '../images/homepage.png'
 import vector from '../images/vector.png'
-import arrow from '../images/Arrow.png'
 import indexStyles from '../styles/Index.module.css'
 
 export const index = () => {
@@ -22,28 +22,25 @@ export const index = () => {
           content="orcasound allows you to listen to live southern killer resident whales live through our hydrophones"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mukta:wght@600&family=Roboto:300,400,500,700&display=swap"
-        ></link>
       </Head>
 
-        
-        <div className={indexStyles.landing}>
-          <Image className={indexStyles.landingImage} src={orcas} /> 
-          <div className={indexStyles.vector}>
-              <Image  src={vector} />
-              <Image className={indexStyles.vectorbackwards} src={vector} />
-          </div>
-          <div className={indexStyles.flex}>
-              <span><h1 className={indexStyles.landingText}>LISTEN TO ORCAS LIVE!</h1> </span>
-              <span className={indexStyles.landingArrow}><Image src={arrow} width = "30px" height = "30px"/></span>
-          </div>
+      <div className={indexStyles.landing}>
+        <Image className={indexStyles.landingImage} src={orcas} />
+        <div className={indexStyles.vector}>
+          <Image src={vector} />
         </div>
+        <div className={indexStyles.flex}>
+          <span>
+            <h1 className={indexStyles.landingText}>LISTEN TO ORCAS LIVE!</h1>{' '}
+          </span>
+          <span className={indexStyles.landingArrow}>
+            <Image src={arrow} width="30px" height="30px" />
+          </span>
+        </div>
+      </div>
 
       <div className={indexStyles.home}>
         <Head>
-          
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1"
@@ -55,22 +52,20 @@ export const index = () => {
           ></link>
         </Head>
         <body>
-        
-          
-
           <br></br>
-          <h2 className={indexStyles.landingIntro}> What is Orcasound</h2>
+          <h1 className={indexStyles.landingIntro}> What is Orcasound</h1>
           <br></br>
 
           <p className={indexStyles.paragraph}>
             {' '}
-            Orcasound Connets your Headphones to live hydrophones (underwater
-            microphones), your ears to the ocean sound. <br></br>
-            Orcasound helps us explore and conserve marine life around the
-            globe.Starting with studying and saving the Southern Resident of the
-            Pacific Northwest. <br></br>
-            At Orcasound you can listen for whales or learn more about marine
-            bioacustics.
+            Orcasound connects your headphones to live hydrophones (underwater
+            microphones), your ears to an ocean of sound.
+            <br></br>
+            <br></br>
+            Orcasound help us explore and conserve marine life around the globe,
+            starting with studying and saving the southern resident killer
+            whales of the Pacific Northwest. At Orcasound you can listen for
+            whales or learn more about marine bioacoustics.
           </p>
 
           <div className={indexStyles.card}>
