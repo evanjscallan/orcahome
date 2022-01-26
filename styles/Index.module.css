@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mukta:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Mukta:wght@500;600&display=swap');
 .body {
   margin: 0px, 50px;
 }
 
 .home {
   padding: 5px 5px;
+  margin: 0px 27px 0px 27px;
 }
 
-.landing{
+.landing {
   position: relative;
   display: grid;
   top: 82px;
@@ -19,13 +20,13 @@
   width: 100%;
 }
 
-.flex{
+.flex {
   z-index: 2;
   display: flex;
   flex-direction: row;
   background-color: #000000;
   position: relative;
-  
+
   border-radius: 20px;
   margin: 0px 36% 0 36%;
   max-width: 600px;
@@ -40,7 +41,7 @@
   line-height: 100%;
   color: white;
   text-shadow: none;
-  display: inline-block; 
+  display: inline-block;
   padding: 27px 10px 29px 33px;
   justify-content: center;
 }
@@ -55,47 +56,40 @@
   padding-right: 4px;
 }
 
-
-.vector{
+.vector {
   z-index: 2;
   align-items: center;
   padding: 20px;
   transform: translateY(-110%);
   margin-left: 50%;
-  width:10%;
-}
-
-
-@media (max-width: 377px) {
-  .vector{
-    visibility: hidden;
-  }
+  width: 10%;
 }
 
 .landingIntro {
   margin: -130px 160px 20px 115px;
+  \\margin: -130px 0vw 20px 0vw;
+
   font-family: 'Mukta', sans-serif;
-  color: #373F41;
+  color: #373f41;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
   font-size: 44px;
   padding: 5px 2px;
   text-align: left;
-  left: calc(50% - 800.05px/2 - 204.98px);
+  left: calc(50% - 800.05px / 2 - 204.98px);
   letter-spacing: -0.02em;
 }
 
 .paragraph {
+  \\margin: 0px 160px 0px 115px;
   margin: 0px 160px 0px 115px;
   padding: 5px 2px;
-  text-align: left;
   font-family: 'Montserrat', sans-serif;
-  left: calc(50% - 1165px/2 - 22.5px);
-  color:#080D26;
+  color: #080d26;
 
   /* P1 */
-  font-style:normal;
+  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
@@ -104,47 +98,49 @@
 
 .card {
   max-width: 1165px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   margin: 30px 0px 115px 0px;
-  left: 97.05px;
+  margin: 30px 160px 0px 115px;
   top: 1204px;
 }
 
-.cardTitle{
-    font-family: 'Mukta', sans-serif;
-    color: #373F41;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 100%;
-    font-size: 44px;
-    text-align: left;
-    letter-spacing: -0.02em;
+.cardTitle {
+  font-family: 'Mukta', sans-serif;
 
+  color: #373f41;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  font-size: 44px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  left: calc(50% - 800.05px / 2 - 204.98px);
 }
 
-.cardText{
+.cardText {
   font-family: 'Montserrat', sans-serif;
-  color:#080D26;
+  color: #080d26;
 
-  font-style:normal;
+  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
 }
 
-.cardText2{
+.cardText2 {
   font-family: 'Montserrat', sans-serif;
-  color:#000000;
+  color: #000000;
 
-  font-style:normal;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  margin-top:-10px;
+  margin-top: -10px;
 }
 
-.cardButton{
-  background: #1B2B7B;
+.cardButton {
+  background: #1b2b7b;
   border-radius: 30px;
   font-family: 'Mukta', sans-serif;
   font-style: normal;
@@ -153,5 +149,30 @@
   width: 194px;
   height: 40px;
   border: none;
-  margin-right: 30px;
+  margin: 0px 30px 14px 0px;
+}
+
+@media (max-width: 1025px) {
+  .landingIntro {
+    margin: -220px 56px 0px 33px;
+  }
+  .paragraph,
+  .card {
+    margin: 0px 56px 0px 33px;
+  }
+}
+
+@media (max-width: 577px) {
+  .vector {
+    visibility: hidden;
+  }
+  .landingIntro {
+    margin: -130px 0px 20px 0px;
+  }
+  .paragraph {
+    margin: 0px;
+  }
+  .col {
+    margin-left: -50px;
+  }
 }
