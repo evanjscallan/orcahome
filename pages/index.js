@@ -1,13 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import Grid from '@mui/material/Grid'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-import CardColumns from 'react-bootstrap/CardColumns'
 import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
 import arrow from '../images/Arrow.png'
@@ -73,7 +72,11 @@ export const index = () => {
           </p>
 
           <Row className={indexStyles.card}>
-            <Col md={{ order: 1 }} xs={{ order: 2 }} className={indexStyles.col}>
+            <Col
+              md={{ order: 1 }}
+              xs={{ order: 2 }}
+              className={indexStyles.col}
+            >
               <Card className="border-0 text-center">
                 <Card.Img
                   variant="top"
@@ -86,7 +89,11 @@ export const index = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={{ order: 2 }} xs={{ order: 1 }} className={indexStyles.col}>
+            <Col
+              md={{ order: 2 }}
+              xs={{ order: 1 }}
+              className={indexStyles.col}
+            >
               <Card className="border-0">
                 <Card.Body>
                   <Card.Title className={indexStyles.cardTitle}>
@@ -101,7 +108,11 @@ export const index = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={{ order: 3 }} xs={{ order: 3 }} className={indexStyles.col}>
+            <Col
+              md={{ order: 3 }}
+              xs={{ order: 3 }}
+              className={indexStyles.col}
+            >
               <Card className="border-0">
                 <Card.Body>
                   <Card.Text className={indexStyles.cardText}>
@@ -126,6 +137,8 @@ export const index = () => {
               </Card>
             </Col>
           </Row>
+
+          <Grid container spacing={1}></Grid>
         </body>
       </div>
     </>

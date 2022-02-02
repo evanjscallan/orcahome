@@ -34,20 +34,16 @@
 }
 
 .landingText {
-  z-index: 2;
   font-family: 'Mukta', sans-serif;
   font-style: normal;
   font-size: 44px;
   line-height: 100%;
   color: white;
-  text-shadow: none;
   display: inline-block;
   padding: 27px 10px 29px 33px;
-  justify-content: center;
 }
 
 .landingArrow {
-  text-shadow: none;
   position: relative;
   top: 35%;
   right: 2px;
@@ -66,8 +62,7 @@
 }
 
 .landingIntro {
-  margin: -130px 160px 20px 115px;
-  \\margin: -130px 0vw 20px 0vw;
+  margin: -100px 160px 20px 115px;
 
   font-family: 'Mukta', sans-serif;
   color: #373f41;
@@ -90,7 +85,6 @@
 
   /* P1 */
   font-style: normal;
-  font-weight: 600;
   font-size: 20px;
   line-height: 140%;
   text-align: justify;
@@ -100,7 +94,7 @@
   max-width: 1165px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  margin: 30px 0px 115px 0px;
+  \\margin: 30px 0px 115px 0px;
   margin: 30px 160px 0px 115px;
   top: 1204px;
 }
